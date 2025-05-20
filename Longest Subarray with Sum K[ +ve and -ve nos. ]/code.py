@@ -19,3 +19,9 @@ def longestSubarray(self, arr, k):
                 
         
         return res
+
+
+""" consider prefixSum as x, so if x-k is present then the remaining portion at end will be k
+
+so res = max(res, i - mp[prefixSum - k ]) ,ie current index minus (x-k) index we will get the index of k
+"""
